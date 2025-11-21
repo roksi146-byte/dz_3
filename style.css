@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7B68EE;
+}
+
+html, body {
+    height: 100%;
+}
+.header {
+    background-color: #191970; /* Цвет фона для шапки */
+    padding: 10px 20px; /* Отступы */
+     position: fixed; 
+      z-index: 1000;
+        left: 0; /* Выровнять по левому краю */
+    right: 0; /* Выровнять по правому краю */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* Разделяем элементы панелью */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Центрируем логотип и текст по вертикали */
+}
+
+.logo img {
+    height: 40px; /* Высота логотипа */
+    margin-right: 20px; /* Отступ между логотипом и текстом */
+    margin-left: 150px;/*отступ слева */
+}
+.logo-title{
+    color: white;
+}
+
+.links {
+    display: flex; /* Отображаем ссылки в строку */
+    margin-right: 150px;/*отступ справа */
+}
+
+.item {
+    margin-left: 50px; /* Отступ между ссылками */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #FFFFFF; /* Цвет текста */
+}
+
+.item:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+h1{
+    color: white;
+    align-items: center;
+}
+p{
+    color: white;
+    align-items: center;
+}
+ .container1 {
+            display: flex;
+            flex-direction: column;  /* Размещаем элементы в столбик */
+            align-items: center;     /* Отцентрировать по горизонтали */
+            justify-content: center;  /* Отцентрировать по вертикали (если height задан) */
+            height: 50vh;  /* Задаем высоту контейнера на весь экран для вертикального центрирования */
+            text-align: center;  /* Центрируем текст внутри блока */
+            padding: 20px; /* Внутренние отступы для контейнера */
+        }
+        
+ .container1 h1 {
+            margin-bottom: 20px; /* Отступ снизу для заголовка */
+        }
+        
+.container1 p {
+            margin-bottom: 20px; /* Отступ снизу для абзаца */
+        }
+
+.container1 button {
+            margin-top: 10px; /* Отступ сверху для кнопки */
+        }
+           
+               /* Стили для кнопки */
+button {
+            color: white;
+            margin-top: 20px;  /* Отступ сверху для кнопки */
+            padding: 10px 20px;  /* Внутренние отступы для кнопки */
+            font-size: 16px;  /* Размер шрифта для кнопки */
+            cursor: pointer;  /* Курсор при наведении на кнопку */
+            border-radius: 25px;
+            background-color: chocolate;
+        }
+.container2 {
+        border-radius: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: white;
+            text-align: center;
+            padding: 100px;
+        }
+
+h2 {
+            margin-bottom: 20px;
+        }
+
+.block {
+            display: inline-block;
+            width: calc(33.333% - 250px);
+            margin: 30px;
+            background: #D3D3D3;
+            border-radius: 8px;
+             box-shadow: -10px 0 0 rgba(0, 0, 255);
+            padding: 15px;
+            vertical-align: top;
+        }
+.container2 p{
+    color:black;
+}
+.container3 {
+        border-radius: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+        padding: 20px;
+        }
+.block1 {
+    display: inline-block;
+    width: calc(33.333% - 250px);
+    margin: 30px;
+    background: #6A5ACD;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+        .container3 h2{
+    color:white;
+}
+.block1 .top {
+    display: flex;           /* Делаем h3 и картинку в один ряд */
+    align-items: center;     /* По вертикали ровно */
+    margin-bottom: 10px;     /* Отступ от текста */
+}
+
+.block1 img {
+             width: 40px; 
+            align-items: center;
+            margin-right: 10px; /* Отступ между изображением и заголовком */
+        }
+.block1 h3 {
+            align-items: center;
+            margin: 0; /* Убираем отступы у заголовка */
+        }
+.block1 p {
+                margin-top: 10px; /* Отступ сверху для параграфа */
+        }
+.container4{
+    display: flex;
+    flex-direction: column;  
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding: 100px;
+    }
+    .block2{
+        margin-left: 300px;
+    margin-right: 300px;
+
+    }
+
+    .block2 h1{
+    margin: 10px;
+    color: black;
+}
+.block2 p{
+    color: black;}
+
+.card1, .card2, .card3, .card4 {
+    display: flex;
+    align-items: flex-start; /* выравнивание по верхней части */
+    margin: 10px 0; /* отступ между карточками */
+    border: 5px solid #ccc; /* граница для визуализации карточки */
+  border-radius: 15px;
+    padding: 20px;
+
+}
+.card1 img, .card2 img, .card3 img, .card4 img {
+    width: 100px; /* ширина изображения */
+    height: auto; /* автоматическая высота, чтобы сохранить пропорции */
+    margin-right: 15px; /* отступ между изображением и текстом */
+    margin-left:50px;
+}
+.text {
+    max-width: 600px; /* максимальная ширина текста */
+}
+footer {
+        text-align: center; /* Центрирует текст */
+        background-color: #f8f9fa; /* Пример фона, при желании можно изменить */
+    }  
+.container5 {
+        background-color: #7B68EE;
+            display: flex;
+            flex-direction: column;  /* Размещаем элементы в столбик */
+            align-items: center;     /* Отцентрировать по горизонтали */
+            justify-content: center;  /* Отцентрировать по вертикали (если height задан) */
+            height: 50vh;  /* Задаем высоту контейнера на весь экран для вертикального центрирования */
+            text-align: center;  /* Центрируем текст внутри блока */
+            padding: 20px; /* Внутренние отступы для контейнера */
+        }
+        
+        
+ .container5 h1 {
+    color: white;
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+        }
+        
+.container5 h3{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    color: white;
+}
+.container5 p {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 10px; /* Отступ снизу для абзаца */
+        }
